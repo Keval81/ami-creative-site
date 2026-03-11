@@ -1379,11 +1379,6 @@ textarea.form-input {
     background: var(--color-cream);
   }
 
-  /* Hero: hide video overlay on mobile for performance */
-  .hero-video-overlay {
-    display: none;
-  }
-
   /* Tighten section padding on mobile */
   section {
     padding: 3.5rem 0;
