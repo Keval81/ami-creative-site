@@ -217,6 +217,7 @@ section {
   right: 0;
   z-index: 1000;
   padding: 20px 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
   transition: all var(--transition-base);
 }
 
@@ -367,19 +368,6 @@ section {
   background: var(--color-navy);
   overflow: hidden;
   padding: 0;
-}
-
-/* Dark gradient at top of hero for navbar contrast — must sit above video overlay */
-#hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 140px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0) 100%);
-  z-index: 3;
-  pointer-events: none;
 }
 
 .hero-image-bg {
