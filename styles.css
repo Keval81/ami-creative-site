@@ -1385,7 +1385,7 @@ textarea.form-input {
 
   /* Scale video overlay down on mobile so animation fits the screen */
   .hero-video-overlay video {
-    transform: translate(-50%, -50%) scale(0.55);
+    transform: translate(-50%, -50%) scale(0.5);
   }
 
   /* Hamburger stays cream when mobile nav is open */
