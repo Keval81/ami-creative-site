@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "ami-creative",
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "framework": null,
+  "installCommand": null
+}
