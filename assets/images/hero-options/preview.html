@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMI Creative — Hero Background Options</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1a1a2e; color: #f5ece6; font-family: 'Poppins', sans-serif; padding: 40px 20px; }
+  h1 { text-align: center; font-size: 2rem; margin-bottom: 10px; color: #e75a7c; }
+  .subtitle { text-align: center; font-size: 0.95rem; color: #999; margin-bottom: 40px; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 40px; max-width: 1000px; margin: 0 auto; }
+  .option { border: 2px solid #333; border-radius: 12px; overflow: hidden; }
+  .option-header { padding: 16px 20px; background: #2e2d4d; display: flex; justify-content: space-between; align-items: center; }
+  .option-header h2 { font-size: 1.1rem; color: #f5ece6; }
+  .option-header span { font-size: 0.85rem; color: #e75a7c; }
+  .hero-preview { position: relative; width: 100%; aspect-ratio: 16/10; overflow: hidden; }
+  .hero-preview img.bg { width: 100%; height: 100%; object-fit: cover; }
+  .hero-preview video { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; transform: translate(-50%, -50%); object-fit: cover; mix-blend-mode: screen; opacity: 0.85; }
+  .desc { padding: 14px 20px; background: #222; font-size: 0.85rem; color: #aaa; line-height: 1.5; }
+</style>
+</head>
+<body>
+<h1>Hero Background Options</h1>
+<p class="subtitle">Each preview shows the video animation overlaid with mix-blend-mode: screen at 0.85 opacity</p>
+<div class="grid">
+
+  <div class="option">
+    <div class="option-header"><h2>Option 1 — Solid Navy</h2><span>#2e2d4d</span></div>
+    <div class="hero-preview">
+      <img class="bg" src="option-1-solid-navy.jpg" alt="Solid navy">
+      <video autoplay loop muted playsinline src="../../hero-animation.mp4"></video>
+    </div>
+    <div class="desc">Clean, minimal. The navy is directly from the brand palette. Screen blend works perfectly — black pixels in the video become transparent, coloured pixels glow. Very Pentagram / Made Thought feel.</div>
+  </div>
+
+  <div class="option">
+    <div class="option-header"><h2>Option 2 — Navy → Black Gradient</h2><span>#2e2d4d → #000</span></div>
+    <div class="hero-preview">
+      <img class="bg" src="option-2-navy-black-gradient.jpg" alt="Navy to black gradient">
+      <video autoplay loop muted playsinline src="../../hero-animation.mp4"></video>
+    </div>
+    <div class="desc">Adds vertical depth — navy at top (where the logo sits) fading to black at bottom. Creates a sense of infinite space. Still fully on-brand.</div>
+  </div>
+
+  <div class="option">
+    <div class="option-header"><h2>Option 3 — Navy + Pink Centre Glow</h2><span>#2e2d4d + #e75a7c</span></div>
+    <div class="hero-preview">
+      <img class="bg" src="option-3-navy-pink-glow.jpg" alt="Navy with pink glow">
+      <video autoplay loop muted playsinline src="../../hero-animation.mp4"></video>
+    </div>
+    <div class="desc">Subtle radial pink warmth at centre where the animation plays, fading to deeper navy at edges. Brings the brand's "bubbly, passionate" energy into the hero while keeping contrast high.</div>
+  </div>
+
+  <div class="option">
+    <div class="option-header"><h2>Option 4 — Abstract Dark Texture</h2><span>Navy + organic noise</span></div>
+    <div class="hero-preview">
+      <img class="bg" src="option-4-abstract-dark-texture.jpg" alt="Abstract dark texture">
+      <video autoplay loop muted playsinline src="../../hero-animation.mp4"></video>
+    </div>
+    <div class="desc">Organic, smoky texture using navy and hints of pink. More visual interest than a flat colour, with a fashion-editorial quality. Still dark enough for clean blending.</div>
+  </div>
+
+  <div class="option">
+    <div class="option-header"><h2>Option 5 — Darkened Original Photo</h2><span>lsbu-44 heavily darkened + navy tint</span></div>
+    <div class="hero-preview">
+      <img class="bg" src="option-5-darkened-original.jpg" alt="Darkened original">
+      <video autoplay loop muted playsinline src="../../hero-animation.mp4"></video>
+    </div>
+    <div class="desc">Keeps the original behind-the-scenes photography but dramatically darkened and tinted navy. Adds story context while solving the colour-blending issue.</div>
+  </div>
+
+</div>
+</body>
+</html>
